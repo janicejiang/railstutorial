@@ -13,7 +13,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get static_pages_home_url # 向 static_pages_home_url 发起 GET 请求
     assert_response :success  # 确认得到表示成功的 HTTP 响应码 200 OK
-    assert_select "title", "Home | #{@base_title}"
+    assert_select "title", "#{@base_title}"
   end
 
   test "should get help" do

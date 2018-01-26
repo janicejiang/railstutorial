@@ -9,6 +9,6 @@ class ActiveSupport::TestCase
 
   # 如果用户已登录, 返回true
   def is_logged_in?
-    !session[:user_id].nil? || !cookies[:remember_token].nil?
+    !session[:user_id].nil?
   end
 end
